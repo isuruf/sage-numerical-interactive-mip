@@ -29,7 +29,6 @@ jobs:
         auto-update-conda: true
         activate-environment: sage-nim
         environment-file: environment.yml
-        python-version: 3.7
         auto-activate-base: false
     - name: Patch in CoinBackend
       run: mkdir -p ~/.sage; echo "import sage_numerical_backends_coin.coin_backend as coin_backend, sage.numerical.backends as backends, sys; sys.modules['sage.numerical.backends.coin_backend'] = backends.coin_backend = coin_backend;" > ~/.sage/init.sage
