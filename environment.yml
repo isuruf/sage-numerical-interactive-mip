@@ -8,7 +8,6 @@
 name: sage-nim
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3
   - sage=8.9
